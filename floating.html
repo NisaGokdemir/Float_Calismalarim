@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    
+    
+    .container{  
+        /*float: right; kutular alt alta sağa gider*/
+        background-color: brown;
+    }
+    
+    .box{
+        float: right; /*kutular yan yana sağa gider*/
+        width: 150px;
+        height: 150px;
+        background-color: coral;
+    }
+    #box1{
+        float: left;
+    }
+    .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    </style>
+
+</head>
+<body>
+    <section class="container clearfix">
+        <div id="box1" class="box">kutu1</div>
+        <div class="box">kutu2</div>
+        <div class="box">kutu3</div>
+        <!--<div style="clear:both ;"></div> -->
+        
+    </section>
+    
+    
+</body>
+</html>

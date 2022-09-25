@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    margin: 10px;
+    padding: 5px;
+    background-color: darkseagreen;
+    color: crimson;
+}
+main{
+    padding: 9px;
+}
+main::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.main__aside{
+   background-color: blueviolet;
+    float: left;
+    width: 25%;
+}
+.main__aside__items{
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+}
+.main__aside__items li{
+    background-color: chocolate;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 30px;
+    padding: 5px;
+}
+.main__aside__items li:hover{
+    background-color: gold;
+}
+.main__section{
+   background-color: brown;
+    float: right;
+    width: 75%
+}
+.main__section h1,p{
+    padding: 5px;
+}
+footer h1{
+    background-color: deeppink;
+    margin: 5px;
+}
